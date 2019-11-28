@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EdurekaSuite]">
+  <listeners>
+    <listener class-name="com.edureka.common.CaptureScreenShot"/>
+  </listeners>
+  <test thread-count="5" name="PhantomJsTest(failed)">
+    <parameter name="browser" value="phantomjs"/>
+    <classes>
+      <class name="com.edureka.testscripts.GoogleSearchScript">
+        <methods>
+          <include name="closeBrowsers"/>
+          <include name="tc_01_searchEdureka"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.edureka.testscripts.GoogleSearchScript -->
+    </classes>
+  </test> <!-- PhantomJsTest(failed) -->
+</suite> <!-- Failed suite [EdurekaSuite] -->

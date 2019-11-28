@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EdurekaSuite">
+	<listeners>
+		<listener class-name="com.edureka.common.CaptureScreenShot"></listener>
+	</listeners>
+<!-- 	<test thread-count="5" name="HtmlunitTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.edureka.testscripts.GoogleSearchScript" />
+		</classes>
+	</test> HtmlunitTest -->
+	<test name="PhantomJsTest">
+		<parameter name="browser" value="phantomjs"></parameter>
+		<classes>
+			<class name="com.edureka.testscripts.GoogleSearchScript" />
+		</classes>
+	</test><!-- PhantomJsTest -->
+</suite> <!-- EdurekaSuite -->
